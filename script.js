@@ -21,7 +21,7 @@ onload = () => {
   const gallery = document.getElementById('gallery');
 
   movies.forEach(movie => {
-    fetch(`http://www.omdbapi.com/?apikey=${apiKey}&t=${encodeURIComponent(movie)}`)
+    fetch(`https://www.omdbapi.com/?apikey=${apiKey}&t=${encodeURIComponent(movie)}`)
       .then(response => response.json())
       .then(data => {
         console.log(data); // Log the data to verify
